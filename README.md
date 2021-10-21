@@ -1,8 +1,8 @@
-# sleek-backend
-Backend service implementation of the Sleek Cashback application
+# sleek-server
+#### Backend service implementation of the Sleek Cashback application
 
 The service exposes following APIs:
-1. /deals : API to retrieve available deals at any moment of time
+1. `/deals` : API to retrieve available deals at any moment of time
 	The deals are returned as an array of json objects with following schema:
   	```
 	{
@@ -28,9 +28,9 @@ The service exposes following APIs:
 	}
 	```
 
-2. /activate/{id}: A POST API call provided by the server to activate deal with id 'id'
+2. `/activate-deal/{id}`: A POST API call provided by the server to activate deal with id 'id'
 
-3. /deals-status: A GET API call provided by the server to get the count of users who have activated the particular deal.
+3. `/deals-status`: A GET API call provided by the server to get the count of users who have activated the particular deal.
 
 How to run the server?
 
