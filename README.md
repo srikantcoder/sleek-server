@@ -4,7 +4,8 @@ Backend service implementation of the Sleek Cashback application
 The service exposes following APIs:
 1. /deals : API to retrieve available deals at any moment of time
 	The deals are returned as an array of json objects with following schema:
-  	{
+  	```
+	{
   		deal_id: UUID string representing this deal uniquely amongst all deals.
 			Type: String
 
@@ -25,6 +26,7 @@ The service exposes following APIs:
                     If |deal_type| is "PERCENTAGE", this value will be a floating point number in the range [0, 1] indicating how many percentage points are discounted off of this purchase. e.g. 0.1 = 10% off of the purchase.
 			Type: Number
 	}
+	```
 
 2. /activate/{id}: A POST API call provided by the server to activate deal with id 'id'
 
