@@ -35,5 +35,5 @@ The service exposes following APIs:
 How to run the server?
 
 1. Backend server is backed by mysql server. Therefore before running the backend server, one needs to run mysql server.
-2. The existing code expects the mysql credentials to be <username: root, password: password>. Also, it expects a database by name 'sleek' to be present. If your mysql server credentials are different, please update the server code's clients/mysql_manager.go file dsn value (root:password@tcp(localhost:3306)/sleek?charset=utf8mb4&parseTime=True&loc=Local) accordingly.
+2. The existing code expects the mysql credentials to be `<username: root, password: password>`. Also, it expects a database by name `sleek` to be present. If your mysql server credentials are different, please update the server code's `clients/mysql_manager.go` file dsn value ```(root:password@tcp(localhost:3306)/sleek?charset=utf8mb4&parseTime=True&loc=Local)``` accordingly.
 3. Move to the cashback folder and run 'go run main.go' to start the server. The server starts listening at port 8082 of localhost.
